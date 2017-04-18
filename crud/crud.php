@@ -55,6 +55,7 @@ function consultar($tabela, $condicao=null, $campos="*"){
 
 function inserir($tabela, array $dados){
 
+<<<<<<< HEAD
         $campos = implode(", ", array_keys($dados));
         $valores = " ' ". implode(" ', ' ", $dados). "'";
         $sql = "INSERT INTO $tabela ({$campos}) VALUES ({$valores})";
@@ -79,6 +80,9 @@ function deletar($tabela, $condicao){
     $sql = "DELETE FROM {$tabela} WHERE {$condicao}";
 
     return executar($sql);
+=======
+
+>>>>>>> origin/master
 }
 
 

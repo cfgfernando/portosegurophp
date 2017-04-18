@@ -12,11 +12,22 @@
     require ("crud.php");
         $conexao = abrirConexao();
 
+<<<<<<< HEAD
 
 
 
     $deletar = deletar("editora", "id_editora = '40'");
     var_dump($deletar);
+=======
+        $dados = consultar("editora");
+
+    echo "<pre>";
+        print_r($dados);
+    echo "</pre>";
+
+
+
+>>>>>>> origin/master
 ?>
 
 </body>

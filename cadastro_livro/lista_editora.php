@@ -12,7 +12,7 @@
     <center><a href="/index.html"><img src="/portoseguro.jpg" alt="Projeto Porto Seguro PHP"/></a></center>
     <h1 align="center">Sistema de Cadastro de Livros</h1>
     <hr>
-    <a href="index.html">Home</a> | <a href="nova_editora.php">Novo Cadastro</a>
+    <a href="index.php">Home</a> | <a href="nova_editora.php">Novo Cadastro</a>
     <table border="1" width="50%">
         <tr>
             <td width="5%" align="center"><b>ID</b></td>

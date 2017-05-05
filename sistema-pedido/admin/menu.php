@@ -11,7 +11,7 @@
             <dd>
                 <ul>
                     <li><a href="lista_cliente.html">Listagem de cliente</span></a></li>
-                    <li><a href="formulario_cliente.html"><span>Cadastro de cliente</span></a></li>
+                    <li><a href="../frm/formulario_cliente.html"><span>Cadastro de cliente</span></a></li>
                 </ul>
             </dd>
 

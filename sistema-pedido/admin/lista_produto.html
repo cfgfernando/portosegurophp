@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>mjailton projeto oráculo</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<!--<link rel="stylesheet" type="text/css" href="css/style-m.css">-->
+
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script>
+	$(function(){
+		$('.mobmenu').click (function(){
+		$('#menu .menu').slideToggle();
+		$(this).toggleClass('active');
+			return false;
+			});
+		});
+</script>
+
+
+</head>
+
+<body>
+<div class="site">
+		<div class="base-topo">
+				<div class="conteudo">
+					<img src="img/logo.png"  class="logo">
+					<div class="usuario"><a href="">Olá, Jairo Sousa<small>jairo.com2@gmail.com</small></a>
+					<div class="thumb"><img src="img/img-user.png"></div>					
+					</div>
+				</div>
+		<div class="admin">
+			<div class="conteudo">ÀREA ADMINISTRATIVA</div>	
+		</div>		
+		</div>
+		
+		<div class="conteudo">
+		
+		
+<div class="menu">
+	<span class="titulo-m"> painel de controle</span>
+	<ul>
+		<li><a href="index.html"><i class="icone ico1"></i><span>Página inicial</span></a></li>
+	</ul>
+	<dl>
+	<dt><a href=""><i class="icone ico2"></i><span>Cliente</span></a></dt>
+       <dd>
+			<ul>
+				<li><a href="lista_cliente.html">Listagem de cliente</span></a></li>
+				<li><a href="../frm/formulario_cliente.html"><span>Cadastro de cliente</span></a></li>
+			</ul>
+		</dd>
+		
+		<dt><a href=""><i class="icone ico3"></i><span>Produto</span></a></dt>
+       <dd>
+			<ul>
+				<li><a href="lista_produto.html">Listagem de Produto</span></a></li>
+				<li><a href="formulario_produto.html"><span>Cadastro de Produto</span></a></li>  
+			</ul>
+		</dd>
+		
+		
+	<dt><a href=""><i class="icone ico7"></i><span>Consulta</span></a></dt>
+       <dd>
+			<ul>
+				<li><a href="lista_pedido_pedente.html"><span>Pedidos pendentes</span></a></li>	   
+				<li><a href="lista_todos_pedidos.html"><span>Todos os pedidos</span></a></li>  
+			</ul>
+		</dd>
+		
+		
+	<dt><a href=""><i class="icone ico4"></i><span>Relatórios</span></a></dt>
+		<dd>		
+		   <li><a href="selecionar_rel_cliente.html"><span>Relatório de Pedidos</span></a></li> 
+		</dd>
+	
+	<dt><a href=""><i class="icone ico8"></i><span>Gráfico</span></a></dt>	
+		<dd>		
+		  <li><a href="selecionar_grafico_cliente.html"><span>Gráfico diário</span></a></li>   
+		</dd>
+	
+	</dl>
+</div>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		//Definimos que todos as tags dd terão display:none menos o primeiro filho
+		$('dd:not(:first)').hide();
+		//Ao clicar no link, executamos a funcao
+		$('dt a').click(function(){
+			//As tags dd's visíveis agora ficam com display:none
+			$("dd:visible").slideUp("slow");
+			//Apos, a funcao é transferida para seu pai, que procura o proximo irmao no codigo o tonando visível
+			$(this).parent().next().slideDown("slow");
+			return false;
+		});
+	});
+</script>
+		
+		
+		
+		
+<div id="conteudocentral">
+<div class="base-home">
+		<div class="titulo_p"><strong></strong><p><i class="icone-l"></i><b>LISTAGEM DE PRODUTO</b></p></div>
+	<div class="base-lista">
+		
+			<a href="../frm/formulario_cliente.html" class="but esq">Cadastrar produto</a>
+			
+			<div class="limpar">&nbsp;</div>
+		<table width="100%" cellpadding="0" cellspacing="0" class="tabela">			
+			
+			<thead>
+			<tr>
+				<th width="5%" align="left">ID:</th>
+				<th width="40%" align="left">Produto:</th>
+				<th width="40%" align="center">Preço:</th>
+				<th colspan="2" align="center">Editar</th>
+			</tr>
+			</thead>
+			<tbody>				
+                            
+				<tr  class="ativo">
+					<td>1</td>
+					<td>Produto 1</td>
+					<td align="center">24.00</td>
+					<td align="center"><a href="#" class="editar but">Editar</a></td>
+					<td align="center"><a href="#" class="excluir but">Excluir</a></td>
+				 </tr>
+				 
+				 <tr  class="ativo2">
+					<td>2</td>
+					<td>Produto 2</td>
+					<td align="center">1024.00</td>
+					<td align="center"><a href="#" class="editar but">Editar</a></td>
+					<td align="center"><a href="#" class="excluir but">Excluir</a></td>
+				 </tr>
+				 
+				 <tr  class="ativo">
+					<td>3</td>
+					<td>Produto 3</td>
+					<td align="center">225.00</td>
+					<td align="center"><a href="#" class="editar but">Editar</a></td>
+					<td align="center"><a href="#" class="excluir but">Excluir</a></td>
+				 </tr>
+				 
+				 <tr  class="ativo2">
+					<td>4</td>
+					<td>Produto 4</td>
+					<td align="center">354.00</td>
+					<td align="center"><a href="#" class="editar but">Editar</a></td>
+					<td align="center"><a href="#" class="excluir but">Excluir</a></td>
+				 </tr>
+				 
+		
+				 
+			</tbody>
+			
+		</table>
+		
+			
+		
+	</div>
+</div>
+		</div>
+		
+</div>
+		
+		
+	
+		<div class="base-rodape">
+	<div class="conteudo">
+		<p>DIREITOS RESERVADOS MJAILTON.COM.BR</p>
+	</div>
+</div>
+	
+		
+</div>
+	</body>
+</html>

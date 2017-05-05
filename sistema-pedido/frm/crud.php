@@ -44,7 +44,7 @@ function consultar($tabela, $condicao = null, $campos = "*")
         return false;
 
     else {
-        while ($linha = @mysqli_fetch_assoc($qry)) {
+        while ($linha = @mysqli_fetch_array($qry)) {
             $dados[] = $linha;
         }
         return $dados;
